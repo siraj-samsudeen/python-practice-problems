@@ -8,4 +8,11 @@ def test():
 
 
 def count_elements(array):
-    pass
+    counter = {}
+    for item in array:
+        if item in counter:
+            counter[item] += 1
+        else:
+            counter[item] = 1
+
+    return counter
